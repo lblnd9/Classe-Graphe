@@ -31,6 +31,8 @@ class Heap:
         r_value = self.heap[0]
         self.heap[0] = self.heap[-1]
         self.heap = self.heap[:-1]
+        if self.heap == []:
+            return r_value
         n = self.heap[0]
         index_n=0
         while (len(self.heap)-1 >= 2*index_n+1 and n > self.heap[2*index_n +1]) or (len(self.heap)-1 >= 2*index_n+2 and n > self.heap[2*index_n +2]):
