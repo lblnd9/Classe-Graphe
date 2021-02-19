@@ -33,3 +33,6 @@ class Graphe:
    
    def voisins(self,s):
        return self.G[s]
+    
+    def kruskal(self):
+        return
