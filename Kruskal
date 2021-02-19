@@ -19,3 +19,4 @@ def krskal(graphe):
             union(sommet1,sommet2)
             fin.append(union(sommet1,sommet2))
     return fin
+    
