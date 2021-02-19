@@ -1,0 +1,21 @@
+graphe=
+sommet=
+fin=[]
+
+def find(sommet):
+    if source[sommet]!=sommet:
+        numéro[sommet]=find(source[sommet])
+    return source[sommet]
+
+def union(sommet1,sommet2):
+    if find(sommet1)>find(sommet2):
+        source[find(sommet2)]=find(sommet1)
+    else:
+        source[find(sommet1)]=find(sommet2)
+
+def krskal(graphe):
+    for sommet in graphe:
+        if find(sommet1)!=find(sommet2):
+            union(sommet1,sommet2)
+            fin.append(union(sommet1,sommet2))
+    return fin
