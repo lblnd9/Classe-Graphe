@@ -13,7 +13,7 @@ def union(sommet1,sommet2):
     else:
         source[find(sommet1)]=find(sommet2)
 
-def krskal(graphe):
+def kruskal(graphe):
     for sommet in graphe:
         if find(sommet1)!=find(sommet2):
             union(sommet1,sommet2)
