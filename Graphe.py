@@ -79,3 +79,9 @@ class Graphe:
     
     def kruskal(self):
         return
+    
+    def prim(self):
+        """
+        cette méthode implémente l'algorithme de Prim, qui construit un ACM
+        """
+        return
